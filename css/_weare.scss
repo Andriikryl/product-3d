@@ -1,0 +1,94 @@
+.weare{
+    padding-block-end: 214px;
+    .weare__content{
+        display: flex;
+        gap: 43px;
+        flex-wrap: wrap;
+        .weare__info{
+            padding-left: 100px;
+            position: relative;
+            .weare__info-titelt-one{
+                font-family: 'HelveticaNeueCyr';
+                font-style: normal;
+                font-weight: 550;
+                font-size: 80px;
+                line-height: 110%;
+                text-transform: uppercase;
+                color: #303030;
+                transform: rotate(-90deg);
+                position: absolute;
+                bottom: 344px;
+                left: -130px;
+            }
+            .weare__info-titelt-two{
+                font-family: 'HelveticaNeueCyr';
+                font-style: normal;
+                font-weight: 550;
+                font-size: 50px;
+                line-height: 110%;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: #303030;
+                padding-block-end: 25px;
+            }
+            .weare__info-text{
+                font-family: 'HelveticaNeueCyr';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 145%;
+                color: #303030;
+                padding-block-end: 35px;
+            }
+            .weare__info-text-second-part{
+                font-family: 'HelveticaNeueCyr';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 145%;
+                color: #303030;
+                padding-block-end: 61px;
+            }
+
+            .weare__info-list{
+                position: relative;
+                right: 100px;
+                >*+*{
+                    padding-block-start: 20px;
+                }
+                .weare__info-list-item{
+                    font-family: 'HelveticaNeueCyr';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 145%;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: #303030;   
+                    display: flex;
+                    align-items: center;
+                    &::before{
+                        content: "";
+                        background-image: url(../images/weare/ul.svg);
+                        display: block;
+                        width: 89px;
+                        height: 6px;
+                        margin-right: 10px;
+                    }                     
+                }
+            }
+        }
+        .weare__img{
+            position: relative;
+            .weare__img-inner{
+                max-width: 459px;
+            }
+            .weare__img-bg{
+                position: absolute;
+                right: -61px;
+                top: 63px;
+                z-index: -1;
+            }
+        }
+    }
+}
