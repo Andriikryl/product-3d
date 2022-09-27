@@ -7,6 +7,10 @@
         .weare__info{
             padding-left: 100px;
             position: relative;
+            @media (max-width: 920px){
+                padding-left: 0px;
+                margin: auto;
+            }
             .weare__info-titelt-one{
                 font-family: 'HelveticaNeueCyr';
                 font-style: normal;
@@ -19,12 +23,19 @@
                 position: absolute;
                 bottom: 344px;
                 left: -130px;
+                @media (max-width: 878px){
+                    font-size: 49px;
+                }
+                @media (max-width: 688px){
+                    font-size: 39px;
+                    left: -100px;
+                }
             }
             .weare__info-titelt-two{
                 font-family: 'HelveticaNeueCyr';
                 font-style: normal;
                 font-weight: 550;
-                font-size: 50px;
+                font-size: clamp(24px, 7vw  - 1rem, 50px);
                 line-height: 110%;
                 letter-spacing: 0.05em;
                 text-transform: uppercase;
@@ -35,7 +46,7 @@
                 font-family: 'HelveticaNeueCyr';
                 font-style: normal;
                 font-weight: 300;
-                font-size: 18px;
+                font-size: clamp(13px, 3vw  - 1rem, 18px);
                 line-height: 145%;
                 color: #303030;
                 padding-block-end: 35px;
@@ -44,7 +55,7 @@
                 font-family: 'HelveticaNeueCyr';
                 font-style: normal;
                 font-weight: 300;
-                font-size: 18px;
+                font-size: clamp(13px, 3vw  - 1rem, 18px);
                 line-height: 145%;
                 color: #303030;
                 padding-block-end: 61px;
@@ -53,6 +64,9 @@
             .weare__info-list{
                 position: relative;
                 right: 100px;
+                @media (max-width: 920px){
+                    right: 0;
+                }
                 >*+*{
                     padding-block-start: 20px;
                 }
@@ -60,7 +74,7 @@
                     font-family: 'HelveticaNeueCyr';
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 18px;
+                    font-size: clamp(14px, 3vw  - 1rem, 18px);
                     line-height: 145%;
                     letter-spacing: 0.05em;
                     text-transform: uppercase;
@@ -74,6 +88,9 @@
                         width: 89px;
                         height: 6px;
                         margin-right: 10px;
+                        @media (max-width: 4700px){
+                            width: 50px;
+                        }
                     }                     
                 }
             }
@@ -88,6 +105,9 @@
                 right: -61px;
                 top: 63px;
                 z-index: -1;
+                @media (max-width: 359px){
+                    top: -39px;
+                }
             }
         }
     }
