@@ -6,6 +6,7 @@
         .prise__info{
             padding: 36px 41px 36px 28px;
             background-color: #303030;
+            position: relative;
         }
         .price__titele{
             font-family: 'HelveticaNeueCyr';
@@ -31,6 +32,91 @@
             &::marker{
                 color: #B2B2B2;
             }
+        &::before{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: hsla(0, 0%, 70%, 1);
+            position: absolute;
+            left: 0;
+            margin-top: -18px;
         }
+
+        }
+        .prise__cost{
+            display: flex;
+          padding-block: 60px;
+            padding-inline: 25px;
+            gap: 40px;
+            background-color: #303030;
+            position: relative;
+            .prise__cost-sum{
+                font-family: 'HelveticaNeueCyr';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 145%;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: #FFFFFF;            
+                span{
+                    font-size: 20px;
+                }
+                &::before{
+                    content: "from";
+                    font-family: 'HelveticaNeueCyr';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 145%;
+                    color: #8C8C8C;    
+                    position: absolute; 
+                    top: 41px;              
+                } 
+            }
+            .prise__cost-btn{
+                padding: 26px 28px 26px 29px;
+                background: #FFFFFF;
+                border: none;
+                cursor: pointer;
+                font-family: 'HelveticaNeueCyr';
+                font-style: normal;
+                font-weight: 550;
+                font-size: 14px;
+                line-height: 14px;
+                text-transform: uppercase;
+                color: #303030;  
+                display: flex;
+                align-items: center;  
+                &::after{
+                    content: "";
+                    background-image: url(../images/prises/Vector.svg);
+                    display: block;
+                    width: 13.27px;
+                    height: 8.02px;
+                    margin-left: 5px;
+                    transition: transform 350ms ease;
+                } 
+                &:hover{
+                    &::after{
+                        transform: translate(20px);
+                    }
+                  }           
+            }
+        }
+    }
+}
+
+.last{
+    &::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: hsla(0, 0%, 70%, 1);
+        position: absolute;
+        left: 0;
+        margin-top: 18px;
     }
 }
