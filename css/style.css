@@ -738,7 +738,8 @@ body {
           padding-block-end: 200px;
 }
 .prises .prise__content {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 70px;
 }
 .prises .prise__content .prise__info {
@@ -782,6 +783,7 @@ body {
   position: absolute;
   left: 0;
   margin-top: -18px;
+  transition: transform 350ms ease;
 }
 .prises .prise__content .prise__cost {
   display: flex;
