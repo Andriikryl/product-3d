@@ -21,13 +21,16 @@
         .prise__list__item{
             margin-inline-start: 14px;
             padding-block: 18px;
-            list-style:circle;
+            list-style:disc;
             font-family: 'HelveticaNeueCyr';
             font-style: normal;
             font-weight: 300;
             font-size: 16px;
             line-height: 145%;
             color: #FFFFFF;            
+            &::marker{
+                color: #B2B2B2;
+            }
         }
     }
 }

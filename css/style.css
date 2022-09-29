@@ -761,11 +761,14 @@ body {
   -webkit-margin-start: 14px;
           margin-inline-start: 14px;
   padding-block: 18px;
-  list-style: circle;
+  list-style: disc;
   font-family: "HelveticaNeueCyr";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 145%;
   color: #FFFFFF;
+}
+.prises .prise__content .prise__list__item::marker {
+  color: #B2B2B2;
 }/*# sourceMappingURL=style.css.map */
