@@ -1,0 +1,33 @@
+.prises{
+    padding-block-end: 200px;
+    .prise__content{
+        display: flex;
+        gap: 70px;
+        .prise__info{
+            padding: 36px 41px 36px 28px;
+            background-color: #303030;
+        }
+        .price__titele{
+            font-family: 'HelveticaNeueCyr';
+            font-style: normal;
+            font-weight: 550;
+            font-size: 20px;
+            line-height: 145%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding-block-end: 36px;
+        }
+        .prise__list__item{
+            margin-inline-start: 14px;
+            padding-block: 18px;
+            list-style:circle;
+            font-family: 'HelveticaNeueCyr';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 145%;
+            color: #FFFFFF;            
+        }
+    }
+}
