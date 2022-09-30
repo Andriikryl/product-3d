@@ -1,0 +1,39 @@
+.team{
+    padding-block-end: 150px;
+    h3{
+        font-family: 'HelveticaNeueCyr';
+        font-style: normal;
+        font-weight: 550;
+        font-size: 60px;
+        line-height: 110%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #303030;        
+        padding-block-end: 60px;
+    }
+    .team__content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 100px;
+        h2{
+            font-family: 'HelveticaNeueCyr';
+            font-style: normal;
+            font-weight: 550;
+            font-size: 30px;
+            line-height: 110%;
+            letter-spacing: 0.05em;
+            color: #303030;
+            padding-block-start: 25px;
+            padding-block-end: 6px;
+        }
+        p{
+            font-family: 'HelveticaNeueCyr';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 145%;
+            text-transform: uppercase;
+            color: #404040;
+        }
+    }
+}

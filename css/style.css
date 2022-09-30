@@ -131,6 +131,25 @@ body {
   transform: translate(20px);
 }
 
+.loder {
+  background: #000;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  mix-blend-mode: multiply;
+}
+.loder .loder__inside {
+  width: 140vw;
+  height: 140vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.01);
+  background: #fff;
+  border-radius: 50%;
+}
+
 .header {
   padding-block: 20px 40px;
 }
@@ -314,7 +333,6 @@ body {
   font-weight: 550;
   font-size: clamp(36px, 7vw - 1rem, 80px);
   line-height: 110%;
-  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #303030;
   -webkit-padding-after: 55px;
@@ -854,4 +872,48 @@ body {
   position: absolute;
   left: 0;
   margin-top: 18px;
+}
+
+.team {
+  -webkit-padding-after: 150px;
+          padding-block-end: 150px;
+}
+.team h3 {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 60px;
+  line-height: 110%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #303030;
+  -webkit-padding-after: 60px;
+          padding-block-end: 60px;
+}
+.team .team__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 100px;
+}
+.team .team__content h2 {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: 0.05em;
+  color: #303030;
+  -webkit-padding-before: 25px;
+          padding-block-start: 25px;
+  -webkit-padding-after: 6px;
+          padding-block-end: 6px;
+}
+.team .team__content p {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 145%;
+  text-transform: uppercase;
+  color: #404040;
 }/*# sourceMappingURL=style.css.map */

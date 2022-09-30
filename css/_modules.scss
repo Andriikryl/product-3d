@@ -66,3 +66,23 @@ $index: calc(1vw + 1vh);
           }
     }
 }
+
+
+.loder{
+    background: #000;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    mix-blend-mode: multiply;
+    .loder__inside{
+        width: 140vw;
+        height: 140vw;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.01);
+        background: #fff;
+        border-radius: 50%;
+    }
+}
