@@ -39,3 +39,40 @@ tl.fromTo('.list', 1, {y:-100,opacity:0}, {y:0,opacity: 1}, "-=0.2")
 tl.fromTo('.list__two', 2, {y:-100,opacity:0}, {y:0,opacity: 1}, "-=0.3")
 
 tl.fromTo('.list__thre', 2.3, {y:-100,opacity:0}, {y:0,opacity: 1}, "-=0.4")
+
+
+
+var checkScrollSpeed = (function(settings){
+    settings = settings || {};
+  
+    var lastPos, newPos, timer, delta, 
+        delay = settings.delay || 50; // in "ms" (higher means lower fidelity )
+  
+    function clear() {
+      lastPos = null;
+      delta = 0;
+    }
+  
+    clear();
+    
+    return function(){
+      newPos = window.scrollY;
+      if ( lastPos != null ){ // && newPos < maxScroll 
+        delta = newPos -  lastPos;
+      }
+      lastPos = newPos;
+      clearTimeout(timer);
+      timer = setTimeout(clear, delay);
+      return delta;
+    };
+})();
+
+function setSkew(skew){
+    $('section').css('transform', 'skewY('+ skew +' deg)')
+}
+
+$(window).on('scroll', function(){
+    var speed = checkScrollSpeed();
+    console.log(speed);
+    setSkew(speed);
+})
